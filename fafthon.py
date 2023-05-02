@@ -105,7 +105,7 @@ async def _(event):
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
 **☆ The BesT Source fafthon
-☆ Version : 1.5
+☆ Version : 1.6
 ☆ Ping : `{ms}`
 ☆ Date : `{m9zpi}`
 ☆ ID : `{event.sender_id}`
