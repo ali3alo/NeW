@@ -190,6 +190,20 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+    if choice == "11":
+        c = d = random.choices(a)
+        d = random.choices(b)
+        f = [c[0], c[0], c[0], c[0], d[0], c[0], c[0]]
+        random.shuffle(f)
+        username = ''.join(f)
+        if username in banned[0]:
+            c = d = random.choices(a)
+            d = random.choices(b)
+            f = [c[0], c[0], c[0], c[0], d[0], c[0], c[0]]
+            random.shuffle(f)
+            username = ''.join(f)
+        else:
+            pass
     return username
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.تشيكر"))
@@ -251,8 +265,7 @@ async def _(event):
                     await event.client.send_message(event.chat_id, f'''
  
 ≧ 𝑫𝑬𝑽𝑬𝑳𝑶𝑷𝑬𝑹 𝑹𝑰𝑮𝑯𝑻𝑺 𝑶𝑭 𝑻𝑯𝑬 𝑺𝑶𝑼𝑹𝑪𝑬 →
-
-~ ( @G_5_G ° @LL1XX ) ~
+  ~ ( @G_5_G ° @GGG5G ) ~
 
 -- -- -- -- -- -- -- -- -- -- -- -- --
 
@@ -316,8 +329,7 @@ async def _(event):
                             channel=ch, username=username))
                         await event.client.send_message(event.chat_id, f'''
 ≧ 𝑫𝑬𝑽𝑬𝑳𝑶𝑷𝑬𝑹 𝑹𝑰𝑮𝑯𝑻𝑺 𝑶𝑭 𝑻𝑯𝑬 𝑺𝑶𝑼𝑹𝑪𝑬 →
-
-~ ( @G_5_G ° @LL1XX ) ~
+   ~ ( @G_5_G ° @GGG5G ) ~
 
 -- -- -- -- -- -- -- -- -- -- -- -- --
 
@@ -339,7 +351,7 @@ async def _(event):
                     pass
                 trys += 1
 
-                await asyncio.sleep(8)
+                await asyncio.sleep(5)
             trys = ""
             isclaim.clear()
             isclaim.append("off")
@@ -355,7 +367,7 @@ async def _(event):
                 await event.client.send_message(event.chat_id, f'''
     ≧ 𝑫𝑬𝑽𝑬𝑳𝑶𝑷𝑬𝑹 𝑹𝑰𝑮𝑯𝑻𝑺 𝑶𝑭 𝑻𝑯𝑬 𝑺𝑶𝑼𝑹𝑪𝑬 →
 
-~ ( @G_5_G ° @LL1XX ) ~
+~ ( @G_5_G ° @GGG5G ) ~
 
 -- -- -- -- -- -- -- -- -- -- -- -- --
 
