@@ -104,7 +104,7 @@ async def _(event):
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
-**☆ Welcome to Source fafthon
+**☆ The BesT Source fafthon
 ☆ Version : 1.5
 ☆ Ping : `{ms}`
 ☆ Date : `{m9zpi}`
