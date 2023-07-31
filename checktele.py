@@ -218,6 +218,18 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+    if choice == "13":
+        c = random.choices(a)
+        d = random.choices(b)
+        f = [c[0], "_", d[0], d[0], d[0]]
+        username = ''.join(f)
+        if username in banned[0]:
+            c = random.choices(a)
+            d = random.choices(b)
+            f = [c[0], "_", d[0], d[0], d[0]]
+            username = ''.join(f)
+        else:
+            pass
     return username
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.تشيكر"))
