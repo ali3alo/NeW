@@ -264,8 +264,8 @@ def gen_user(choice):
             d = random.choices(b)
             f = [c[0], d[0], c[0], d[0], c[0], d[0]] 
             username = ''.join(f)
-         else: 
-             pass
+        else: 
+            pass
     return username
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.تشيكر"))
