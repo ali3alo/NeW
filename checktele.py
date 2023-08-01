@@ -252,7 +252,7 @@ def gen_user(choice):
             d = random.choices(b)
             f = [c[0], d[0], d[0], d[0], c[0]]
             username = ''.join(f)
-         else:
+        else:
             pass
     if choice == "16":
         c = random.choices(a) 
