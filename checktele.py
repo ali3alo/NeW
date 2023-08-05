@@ -245,7 +245,7 @@ def gen_user(choice):
     if choice == "15":
         c = random.choices(a) 
         d = random.choices(b)
-        f = [c[0], d[0],"_"[0], d[0], d[0]]
+        f = [c[0], d[0], "_", d[0], d[0]]
         username = ''.join(f)
         if username in banned[0]:
             c = random.choices(a)
@@ -280,7 +280,30 @@ def gen_user(choice):
             username = ''.join(f)
         else: 
             pass
-            
+            if choice == "18":
+        c = random.choices(a) 
+        s = random.choices(e)
+        f = [c[0], e[0], "_", e[0], c[0]]
+        username = ''.join(f)
+        if username in banned[0]:
+            c = random.choices(a)
+            s = random.choices(e)
+            f = [c[0], e[0],"_"[0], e[0], c[0]]
+            username = ''.join(f)
+        else: 
+            pass 
+            if choice == "19":
+        c = random.choices(a) 
+        d = random.choices(b)
+        f = [c[0], d[0],"_"[0], d[0], c[0]]
+        username = ''.join(f)
+        if username in banned[0]:
+            c = random.choices(a)
+            d = random.choices(b)
+            f = [c[0], d[0],"_"[0], d[0], c[0]]
+            username = ''.join(f)
+         else: 
+            pass
     return username
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.تشيكر"))
