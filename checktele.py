@@ -113,9 +113,10 @@ def gen_user(choice):
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
-            c = d = random.choices(a)
+            c = random.choices(a)
             d = random.choices(b)
-            f = [c[0], d[0], c[0], c[0], c[0]]
+            e = random.coices (a) 
+            f = [c[0], d[0], d[0], d[0], e[0]]
             random.shuffle(f)
             username = ''.join(f)
         else:
@@ -341,6 +342,20 @@ def gen_user(choice):
             d = random.choices(e)
             s = random.choices(b)
             f =  [c[0], d[0], s[0], s[0], s[0]]
+            username = ''.join(f)
+        else: 
+            pass
+    if choice == "23":
+        c = d =random.choices(a)
+        d = random.choices(b)
+        s = random.choices(e)
+        f =  [c[0], d[0], d[0], d[0], s[0]]
+        username = ''.join(f)
+        if username in banned[0]:
+            c = d =random.choices(a)
+            d = random.choices(e)
+            s = random.choices(b)
+            f =  [c[0], d[0], d[0], d[0], c[0]]
             username = ''.join(f)
         else: 
             pass
