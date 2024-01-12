@@ -16,6 +16,7 @@ from threading import Thread
 a = 'qwertyuiopassdfghjklzxcvbnm'
 b = '1234567890'
 e = 'qwertyuiopassdfghjklzxcvbnm1234567890'
+s = '8x'
 
 banned = []
 isclaim = ["off"]
@@ -120,6 +121,7 @@ def gen_user(choice):
         c = d = random.choices(a)
         d = random.choices(b)
         f = [c[0], "_", d[0], d[0], d[0]]
+        username = ''.join(f)
         if username in banned[0]:
             c = d = random.choices(a)
             d = random.choices(b)
@@ -139,7 +141,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
-    if choice == "15":
+    if choice == "9":
         c = random.choices(a) 
         d = random.choices(b)
         f = [c[0], d[0], "_", d[0], d[0]]
@@ -151,7 +153,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
-    if choice == "16":
+    if choice == "10":
         c = d = random.choices(a) 
         d = random.choices(b)
         f = [c[0], d[0], c[0], d[0], c[0], d[0]]
@@ -163,7 +165,7 @@ def gen_user(choice):
             username = ''.join(f)
         else: 
             pass
-    if choice == "17":
+    if choice == "11":
         c = d = random.choices(a)
         d = random.choices(b)
         f = [c[0], d[0], "_", c[0], c[0]]
@@ -177,7 +179,7 @@ def gen_user(choice):
             username = ''.join(f)
         else: 
             pass
-    if choice == "18":
+    if choice == "12":
         c = random.choices(a) 
         s = random.choices(e)
         f = [c[0], e[0], "_", e[0], c[0]]
@@ -189,7 +191,7 @@ def gen_user(choice):
             username = ''.join(f)
         else: 
             pass 
-    if choice == "19":
+    if choice == "13":
         c = random.choices(a) 
         d = random.choices(b)
         f = [c[0], d[0],"_"[0], d[0], c[0]]
@@ -201,7 +203,7 @@ def gen_user(choice):
             username = ''.join(f)
         else: 
             pass
-    if choice == "20":
+    if choice == "14":
         c = d =random.choices(a)
         d = random.choices(e)
         s = random.choices(b)
@@ -215,7 +217,7 @@ def gen_user(choice):
             username = ''.join(f)
         else: 
             pass
-    if choice == "21":
+    if choice == "15":
         c = random.choices(a)
         s = random.choices(b)
         f =  [c[0], c[0], s[0], s[0], s[0], s[0]]
@@ -227,21 +229,21 @@ def gen_user(choice):
             username = ''.join(f)
         else: 
             pass
-    if choice == "22":
+    if choice == "16":
         c = d =random.choices(a)
         d = random.choices(e)
-        s = random.choices(b)
-        f =  [c[0], d[0], s[0], s[0], s[0]]
+        s = random.choices(s)
+        f =  [c[0], s[0], s[0], s[0], d[0]]
         username = ''.join(f)
         if username in banned[0]:
             c = d =random.choices(a)
             d = random.choices(e)
-            s = random.choices(b)
-            f =  [c[0], d[0], s[0], s[0], s[0]]
+            s = random.choices(s)
+            f =  [c[0], s[0], s[0], s[0], d[0]]
             username = ''.join(f) 
         else: 
             pass
-    if choice == "23":
+    if choice == "17":
         c = d = random.choices(a)
         d = random.choices(b)
         s = random.choices(e)
@@ -254,6 +256,30 @@ def gen_user(choice):
             s = random.choices(e)
             f = [c[0], s[0], s[0], s[0],  d[0]]
             random.shuffle(f)
+            username = ''.join(f)
+        else:
+            pass
+    if choice == "18": 
+        c = d = random.choices(a)
+        d = random.choices(b)
+        f = [c[0], c[0], c[0], c[0], c[0], c[0], d[0]]
+        username = ''.join(f)
+        if username in banned[0]:
+            c = d = random.choices(a)
+            d = random.choices(b)
+            f = [c[0], c[0], c[0], c[0], c[0], c[0], d[0]]
+            username = ''.join(f)
+        else:
+            pass
+   if choice == "19": 
+        c = d = random.choices(a)
+        d = random.choices(b)
+        f = [c[0], c[0], c[0], c[0], c[0], c[0], c[0], d[0]]
+        username = ''.join(f)
+        if username in banned[0]:
+            c = d = random.choices(a)
+            d = random.choices(b)
+            f = [c[0], c[0], c[0], c[0], c[0], c[0], c[0], d[0]]
             username = ''.join(f)
         else:
             pass
