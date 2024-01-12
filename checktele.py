@@ -42,10 +42,7 @@ def check_user(username):
         return "Unavailable"
 
 def gen_user(choice):
-    if choice 
-        else:
-            pass
-    if choice == "7":
+    if choice == "1" 
         c = d = random.choices(a)
         d = random.choices(b)
         f = [c[0], c[0], c[0], c[0], c[0], d[0]]
@@ -57,7 +54,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
-    if choice == "8":
+    if choice == "2":
         c = d = random.choices(a)
         d = random.choices(b)
         f = [c[0], c[0], d[0], d[0], c[0], c[0]]
@@ -69,7 +66,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
-    if choice == "9":
+    if choice == "3":
         c = d = random.choices(a)
         d = random.choices(b)
         f = [c[0], c[0], c[0], c[0], d[0], d[0], d[0], d[0]]
@@ -81,7 +78,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
-    if choice == "10":
+    if choice == "4":
         c = d = random.choices(a)
         d = random.choices(b)
         f = [c[0], d[0], "_", c[0], c[0]]
@@ -95,7 +92,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
-    if choice == "11":
+    if choice == "5":
         c = d = random.choices(a)
         d = random.choices(a)
         f = [c[0], c[0], c[0], c[0], d[0], d[0]]
@@ -107,7 +104,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
-    if choice == "12":
+    if choice == "6":
         c = d = random.choices(a)
         d = random.choices(b)
         f = [c[0], c[0], d[0], d[0], d[0], c[0], c[0]]
@@ -119,7 +116,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
-    if choice == "13":
+    if choice == "7":
         c = random.choices(a)
         d = random.choices(b)
         f = [c[0], "_", d[0], d[0], d[0]]
@@ -130,7 +127,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
-    if choice == "14":
+    if choice == "8":
         c = random.choices(a)
         d = random.choices(b)
         f = [c[0], d[0], "_", d[0], d[0], d[0]]
